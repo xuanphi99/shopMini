@@ -154,7 +154,7 @@ function GoBackWithRefresh() {
 		
 	
 		$.ajax({
-			url: '/MiniTest/api/XuLyDangNhap',
+			url: '/api/XuLyDangNhap',
 			type: 'GET',
 			dataType : 'json',
 			data: {
@@ -230,7 +230,7 @@ function GoBackWithRefresh() {
 			var nhaplaimatkhau = $('.nhaplaimatkhau').val(); 
 			var matkhaudk = $('#matkhaudk').val();
 			$.ajax({
-				url: '/MiniTest/api/XuLyDangKy',
+				url: '/api/XuLyDangKy',
 				type: 'GET',
 				dataType : 'json',
 				data: {
@@ -345,7 +345,7 @@ function GoBackWithRefresh() {
 		
 		
 			$.ajax({
-				url: '/MiniTest/api/AddToCast',
+				url: '/api/AddToCast',
 					type: 'GET',
 					dataType : 'json',
 					data: {
@@ -382,7 +382,7 @@ function GoBackWithRefresh() {
 		});
 		 // het xu ly gio hang 
 		$('.btn-view-cart').click(function(event) {
-			window.location.href = "/MiniTest/giohang";
+			window.location.href = "/giohang";
 
 			
 		});
@@ -404,7 +404,7 @@ $('.DM').click(function(event) {
 		$('.pageDetail2').hide();
 	console.log(MaDanhMuc+" "+ TenDanhMuc);
 			$.ajax({
-				url: '/MiniTest/api/loaddanhmuc',
+				url: '/api/loaddanhmuc',
 					type: 'GET',
 //					dataType : 'json',
 // ben ajax controller de produces = "text/plain" len datatype k dc de json
@@ -498,7 +498,7 @@ $('.DM').click(function(event) {
 			var mamau=  $(this).parent().parent().siblings('.mau').attr("data-MaMau");
 			var masize= $(this).parent().parent().siblings('.size').attr("data-maSize");
 			$.ajax({
-				url	: '/MiniTest/api/updateCast',
+				url	: '/api/updateCast',
 					type: 'GET',
 					dataType : 'json',
 					data: {
@@ -559,13 +559,13 @@ $('.DM').click(function(event) {
 			
 			if (sum==1) {
 
-					window.location.href = "/MiniTest/giohang";	
+					window.location.href = "/giohang";	
 				
 			}
 //			
 			
 			$.ajax({
-				url: '/MiniTest/api/xoasp',
+				url: '/api/xoasp',
 					type: 'GET',
 					dataType : 'json',
 					data: {
@@ -650,7 +650,7 @@ $('.DM').click(function(event) {
 						  if (willDelete) {
 							  // Tới trang đăng nhập 
 							  historyUrl = window.location.href;
-							  window.location.href = "/MiniTest/dangnhap";
+							  window.location.href = "/dangnhap";
 							 
 						//	  history.back();
 
@@ -699,7 +699,7 @@ $('.DM').click(function(event) {
 		else {
 		
 		$.ajax({
-			url: '/MiniTest/api/dathang',
+			url: '/api/dathang',
 				type: 'POST',
 				
 				data: {
@@ -819,7 +819,7 @@ $('.DM').click(function(event) {
 				This.closest("tr").remove();
 				
 			$.ajax({
-				url:"/MiniTest/api/xoasanpham",
+				url:"/api/xoasanpham",
 			    type:"GET",
 			    data:{
 			    	spxoa:spxoa,
@@ -854,7 +854,7 @@ $('.DM').click(function(event) {
 		forms.append("file",files[0]);  // tao 1 bien ten file gan gia tri trong mang file vua lay ddc
 		
 		$.ajax({
-			url:"/MiniTest/api/UploadFile",
+			url:"/api/UploadFile",
 		    type:"POST",
 		    data:forms,  // kieu dl the form vua tao
 		    contentType:false,  // do file dc ma hoa ra nhieu ki tu nen phai sd pt Post , va contentype khong dinh dan ai file da ma hoa
@@ -908,7 +908,7 @@ $('.DM').click(function(event) {
 			 console.log(json);
 			
 			$.ajax({
-				url:"/MiniTest/api/themsanpham",
+				url:"/api/themsanpham",
 			    type:"POST",
 			    dataType: json,
 			    data:
@@ -971,7 +971,7 @@ $('.DM').click(function(event) {
 			 console.log(json);
 			
 			$.ajax({
-				url:"/MiniTest/api/updatesanpham",
+				url:"/api/updatesanpham",
 			    type:"POST",
 			    dataType: json,
 			    data:
@@ -1000,7 +1000,7 @@ $('.DM').click(function(event) {
 			$('button#btnThemSanPham').addClass('hidden');
 			
 			$.ajax({
-				url:"/MiniTest/api/capnhatsanpham/",
+				url:"/api/capnhatsanpham/",
 			    type:"Post",
 			   
 			    data:
@@ -1069,7 +1069,7 @@ $('.DM').click(function(event) {
 // các hàm dùng lại
 		function LoadSpadmin(spbatdau) {
 			$.ajax({
-				url:"/MiniTest/api/PhanTrang",
+				url:"/api/PhanTrang",
 			    type:"GET",
 			    data:{
 			    	spbatdau:spbatdau,

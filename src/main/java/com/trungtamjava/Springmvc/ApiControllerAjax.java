@@ -366,7 +366,7 @@ public class ApiControllerAjax {
 				for (SanPham i : listDMByID) {
 					
 
-					String urlAnh = "/MiniTest/resources/Image/sanpham/"+i.getHinhSanPham();
+					String urlAnh = "/resources/Image/sanpham/"+i.getHinhSanPham();
 					y= y+ 0.05;
 					str = str + "<div class='col-md-4 col-lg-3 col-sm-6  '> ";
 					str = str + " <div class=\"card text-center wow fadeInDown \"  data-wow-delay=\" "+y+" s \"  > ";
@@ -376,7 +376,7 @@ public class ApiControllerAjax {
 					str = str + " <div class=\"card-body\"> ";
 					str = str + " <h4 class=\"card-title tensp\"> " +i.getTenSanPham()  +" </h4>  ";
 					str = str + " <p class=\"card-text giasp\"> " + i.getGiaTien() +" VNĐ</p>  ";
-					str = str + " <a href='/MiniTest/chitietsanpham/" +i.getMaSanPham() +"' class=\"btn btn-info nutsp\"> Xem chi tiết</a> ";
+					str = str + " <a href='/chitietsanpham/" +i.getMaSanPham() +"' class=\"btn btn-info nutsp\"> Xem chi tiết</a> ";
 					str = str + " </div> ";
 					str = str + " </div> ";
 					str = str + " </div> ";
@@ -398,7 +398,7 @@ public class ApiControllerAjax {
 			 String html="";
 			 List<SanPham> listSanPhams = sanphamService.listSanPham(spbatdau);
 				for (SanPham sanPham : listSanPhams) {
-					String urlAnh = "http://localhost:8080/MiniTest/resources/Image/sanpham/"+ sanPham.getHinhSanPham();
+					String urlAnh = "https://shopmini-demo.herokuapp.com/resources/Image/sanpham/"+ sanPham.getHinhSanPham();
 					html += "<tr>";
 					html += "<td><div class='checkbox'><label><input class='checkboxsanpham' type='checkbox' value='"+sanPham.getMaSanPham()+"'></label></div></td>";
 					html+="<td class='hinhsp'>   <img src='"+urlAnh+"' alt='' />  </td>  ";
