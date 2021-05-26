@@ -1,0 +1,174 @@
+@charset "UTF-8";
+*{
+	margin: 0px;
+	padding: 0px;
+	
+}
+
+input.showmk {
+    display: inline-block;
+    margin-top: 6px;
+    margin-bottom: 13px;
+}
+
+div#container-center-login-right {
+    width: 80%;
+}
+
+.csschung{
+	    border: none;
+	    height: 38px;
+	    background-color: #d8d8d8;
+	    margin-bottom: 8px;
+	    width: 100%;
+	    font-size: 14px;
+	    color: #a21919;
+	    font-weight: bold;
+	    font-family: sans-serif;
+	    background-repeat: no-repeat;
+	    padding-left: 42px;
+	    box-sizing: border-box;
+	    background-position-x: 10px;
+	    background-position-y: center;
+}
+
+button.CancelDangNhap {
+    cursor: pointer;
+    width: 49%;
+    padding-left: 0px;
+    margin-left: 1px;
+    margin-left: 1px;
+    background-color: #0c80ec7d;
+}
+
+a.button.CancelDangNhap {
+    text-decoration: none;
+    color: #a21919;
+    font-weight: bold;
+    font-family: sans-serif;
+}
+
+button.CancelDangNhap:hover {
+    background-color: #0c80ecc4;
+    transition: 0.1s;
+    color: #de4a4a;
+}
+
+input.email {
+    background-image: url("../images/ic_email.png");
+}
+
+input.matkhau, .nhaplaimatkhau {
+    background-image: url("../images/ic_lock.png");
+   
+}
+
+div#header-top-right {
+    align-self: flex-start;
+}
+
+div#container-social-login {
+    align-self: flex-end;
+}
+
+.btnDangNhap, #xulydk{background-color: #187ddc85;transition: 0.2s;cursor: pointer;width: 49%;margin-right: 1px;padding-left: 0px;}
+
+button.btnDangNhap:hover, #xulydk:hover {
+    background-color: #0c80ecd9;
+    transition: 0.1s;
+    color: #de4a4a;
+}
+
+input.btnDangNhap:hover {
+    background-color: #187ddcd1;
+    transition: 0.2s;
+    cursor: pointer;
+}
+
+.actived {
+    color: #f34b0e;
+    
+}
+.container-signup-form{
+	display: none;
+}
+div#header-top-right {
+    font-size: 20px;
+    color: #a9aeb7;
+    padding: 0px 14px;
+    cursor: pointer;
+}
+
+div#container-login-right {
+    height: 510px;
+    width: 480px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+span#text-logo {
+    font-size: 48px;
+    color: wheat;
+}
+
+div#header-bottom-left {
+    bottom: 30px;
+    position: absolute;
+    width: 380px;
+    color: wheat;
+    padding: 10px 0px;
+    font-size: 13px;
+}
+
+div#header-bottom-left p img {
+    padding: 0px 8px;
+}
+
+div#header-bottom-left p.img {}
+
+div#header-top-left {
+    text-align: center;
+    top: 32px;
+    width: 100%;
+    color: white;
+    position: absolute;
+}
+
+span#hint-text-logo {
+    font-size: 15px;
+}
+
+div#header-top-left {}
+
+div#container-login-left {
+    height: 510px;
+    position: relative;
+    width: 400px;
+    background-image: url("../images/backgrounddangnhap.png");
+}
+
+
+html, body {
+    height: 100%;
+    font-family: CURSIVE;
+}
+
+div#container-login {
+    background-color: white;
+    width: 820px;
+    height: 510px;
+    display: flex;
+}
+
+div#body-flex-login {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+body#body-login {
+    background-color: #00909C;
+}
