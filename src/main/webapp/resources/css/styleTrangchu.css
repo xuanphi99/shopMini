@@ -1,0 +1,581 @@
+@charset "UTF-8";
+*{
+		margin: 0px;
+	padding: 0px;
+	
+}
+
+h4.card-title.tensp ,.giasp {
+    height: 82px;
+    text-transform: uppercase;
+    color: #7b4397;
+     /* fallback for old browsers */
+     /* Chrome 10-25, Safari 5.1-6 */
+    text-shadow: 2px 2px #bfa2a2;
+}
+
+p.card-text.giasp {
+    text-shadow: none;
+    font-weight: bold;
+    color: #252523eb;
+}
+img.card-img-top {
+    width: 75%;
+}
+
+.hienTbHetHang, .HienthongBaoDatHang {
+    opacity: 1;
+    visibility: visible!important;
+    transition: 0.4s;
+    transform: translateY(0px)!important;
+}
+.alert.alert-warning.alert-dismissible.thongBaoHetHang, .thongBaoDatHang {
+    position: fixed;
+    bottom: 0px;
+    right: 0px;
+    z-index: 1;
+    visibility: hidden;
+    z-index: 1;
+     transform: translateY(100px);
+}
+h5.TongTienDonHang {
+    text-align: right;
+    margin-bottom: 30px;
+}
+h5.tieuDeGioHang {
+    text-align: center;
+    margin: 30px 0px;
+    color: red;
+}
+input.input {
+    width: 72px;
+    border: 1px solid;
+    text-align: center;
+}
+
+.input-group.nhomSoLuong {
+    text-align: center;
+    font-size: 13px;
+    /* border: 1px; */
+    width: 165px;
+    margin: 0px;
+}
+
+span.increase {
+    border: 1px solid;
+    text-align: center;
+    width: 36px;
+    cursor: pointer;
+    border-left-style: none;
+    transform: translateX(-1px);
+}
+
+span.decrease {
+    width: 36px;
+    border: 1px solid;
+    border-right-style: none;
+    cursor: pointer;
+    transform: translateX(1px);
+}
+
+.text-md-center.mt-2.giohangEmpty {
+    margin: 40px 0px;
+    padding: 15px 0px;
+    box-sizing: border-box;
+    text-align: center;
+    text-transform: uppercase;
+    color: rebeccapurple;
+    font-size: 15px;
+}
+
+img.anhsp {
+    width: 121px;
+    height: 124px;
+}
+
+button.close.nutX {
+    padding: 0px;
+    padding-right: 5px;
+}
+
+li.nav-item.ParentShoppingCast {
+    position: relative;
+    top: 6px;
+}
+
+.MenuChiTiet {
+    width: 100%;
+    z-index: 4;
+    height: auto;
+    position: relative;
+}
+
+span.sumCast {
+    background: rgb(253, 216, 53);
+    color: rgb(74, 74, 74);
+    font-size: 17px;
+    display: inline-block;
+    text-align: center;
+    border-radius: 2px;
+    font-weight: 700;
+    margin-right: 23px;
+    padding: 0px 6px;
+    position: absolute;
+    border-radius: 50%;
+    right: -37px;
+    top: 0px;
+    cursor: pointer;
+}
+
+.shoppingCast {
+    margin: 0px 10px;
+    border: 2px solid wheat;
+    box-sizing: border-box;
+    padding-top: 5px;
+    width: 80px;
+    border-radius: 79px;
+    padding-right: 23px;
+}
+
+button.btn.btn-danger.Addtocast {
+    width: auto;
+    font-size: 14px;
+}
+span.gia {
+    font-weight: 900;
+}
+
+ul.dsSanPham {
+    margin-left: 10px;
+    margin-top: 17px;
+}
+
+span.mota {
+    font-size: 16px;
+    color: #150119;
+}
+
+.chitietSanPham {
+    margin-top: 15px;
+}
+
+.col-sm-2.col-md-2.danhmucsanPham {}
+
+.TittleSanPham {
+    color: red;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+ul.dsSanPham li {
+    list-style: none;
+    font-size: 16px;
+    font-family: cursive;
+}
+
+ul.dsSanPham li:hover {
+    color: red;
+    cursor: pointer;
+}
+
+ul.dsSanPham li:hover > ul {
+    display: block;
+}
+
+img.anhSPChitiet {
+    width: 100%;
+}
+
+.col-md-4.col-lg-3.col-sm-6.itemsanPham:hover {
+    transition: 0.4s;
+    transform: scale(1.1);
+    cursor : pointer;
+    overflow: hidden;
+    box-sizing: border-box;
+}
+.headerChitiet.container-fluid {
+    /* background: linear-gradient(#2d2a2a5c, #a084b95e) , url(../images/background_trangchu.jpg) no-repeat center center fixed; */
+    /* background: gray; */
+    background: rgb(24, 158, 255);
+    opacity: 0.8;
+}
+
+.headerChitiet.container-fluid {}
+
+/*  css page chi tiet */
+@media screen and (max-width: 991px) {
+
+	*{
+	}
+
+.container-fluid {
+      /* fallback for old browsers */
+        /* Chrome 10-25, Safari 5.1-6 */
+       /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+      background: linear-gradient(to left, #dd5e8938, #f7bb9726); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+      /* opacity: 0.2; */
+}
+
+.row.phanDongGiohang {
+    overflow: hidden;
+}
+
+a.navbar-brand {
+    /* background: red; */
+    margin: auto;
+}
+
+a.navbar-brand {}
+
+a.logogioohang.updateGioHangTrangChu {
+    margin-left: 0px;
+}
+
+span#giohang {
+    right: auto;
+}
+
+span.gioHangTrangchu {
+    margin-left: 12px;
+}
+
+span#giohang:hover {
+    cursor: pointer;
+}
+
+.MenuChiTiet {
+    text-align: center;
+}
+a.logogioohang{
+    
+padding-left: 0px!important;
+    
+display: block;
+    
+width: 24px;
+    
+margin: auto;
+}
+
+}
+
+
+textarea {
+    background: #e6eae6;
+    width: 100%;
+}
+
+input.material-textinput {
+    width: 100%;
+    background: #e6eae6;
+}
+
+div#footer {
+    font-weight: bold;
+    font-size: 15px;
+    color: #fdfdfdd1;
+    font-family: unset;
+    background-image: url("../Image/background_footer.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding-top: 32px;
+}
+
+
+div#footer p {
+    text-align: center;
+}
+
+.col-md-4.col-lg-3.col-sm-6.itemsanPham {
+    margin-bottom: 40px;
+}
+
+.card.text-center {
+    border: 1px solid #179fce12;
+    /* box-shadow: -5px -1px 9px 1px; */
+}
+
+
+.col-md-3.itemsanPham img {
+    height: 256px;
+}
+
+span.sphot {
+    font-size: 38px;
+    font-family: serif;
+    font-weight: bold;
+    color: #ea0101;
+    text-align: center;
+    margin: 20px 0px;
+    display: block;
+}
+
+
+.col-md-4.nd1khoiinfo {
+	text-align: center;
+	    margin: 15px 0px;
+}
+
+.info img.icon {
+    width: 48px;
+    height: 48px;
+}
+
+
+
+
+/*  css phan header */
+
+.trangchuPanMenu {
+    position: absolute;
+    z-index: 2;
+    width: 100%;
+}
+
+.trangchu {
+    height: 100%;
+    width: 100%;
+    display: table;
+    position: relative;
+    background: linear-gradient(#2d2a2a5c, #a084b95e) , url(../images/background_trangchu.jpg) no-repeat center center fixed;
+    height: 100%;
+    background-size: cover;
+    width: 100%;
+}
+
+.ndgiua {
+    width: auto;
+    color: #ff460b;
+    text-transform: capitalize;
+    font-size: 20px;
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+    z-index: 1;
+}
+
+ul.navbar-nav.itemphai {
+    font-size: 20px;
+}
+
+.Messenger:before {content: "";position: absolute;bottom: 100%;right: 8px;border-width: 8px;border-style: solid;border-color: transparent transparent rgb(255, 255, 255);border-image: initial;border-bottom: 8px solid rgb(255, 255, 255);}
+
+.Messenger {
+    position: absolute;
+    background-color: rgb(255, 255, 255);
+    border-radius: 5px;
+    font-size: 13px;
+    right: 19px;
+    padding: 16px;
+    box-shadow: rgb(179, 179, 179) 1px 1px 15px;
+    z-index: 5;
+    display: none;
+}
+
+.Messenger.alert.alert-warning.alert-dismissible.fade.show svg {
+    color: rgb(76, 175, 80);
+    font-size: 18px;
+}
+
+a.btn-view-cart {
+    display: block;
+    margin-top: 16px;
+    width: 240px;
+    color: rgb(255, 255, 255);
+    font-size: 14px;
+    font-weight: 500;
+    text-align: center;
+    white-space: nowrap;
+    background-color: rgb(255, 57, 69);
+    padding: 10px 0px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+a.btn-view-cart:hover {
+    opacity: 0.88;
+    color: rgb(255, 255, 255);
+}
+
+
+
+a.logogioohang {/*display: block;*/ padding-left: 23px;margin-top: 7px;}
+
+a.logogioohang {
+}
+
+ul.navbar-nav.mr-auto.itemmenutrai {
+    margin: auto;
+    font-size: 20px;
+    box-sizing: border-box;
+}
+
+ul.navbar-nav.mr-auto.itemmenutrai li.nav-item a.nav-link:hover {
+    background: #a55454c7;
+    transition: 0.4s;
+    /* border: 2px solid; */
+    color: wheat;
+    border-radius: 20%;
+    box-sizing: border-box;
+}
+
+ul.navbar-nav.mr-auto.itemmenutrai li.nav-item a.nav-link , .itemphai li.nav-item a.nav-link {
+    color: white;
+}
+
+a.nav-link.circle-avartar {
+    background: #e23c3cc2;
+    width: 38px;
+   /*  margin: auto; */
+    border-radius: 19px;
+    text-align: center;
+    padding-top: 0px;
+}
+
+nav.navbar.navbar-expand-lg.navbar-light.bg-light.maumenu {
+    border: none;
+    background: none!important;
+}
+
+body,html {
+    width: 100%;
+    height: 100%;
+}
+
+.header.container-fluid {
+        /* background: linear-gradient(#2d2a2a5c, #a084b95e) , url(../images/background_trangchu.jpg) no-repeat center center fixed; */
+        /* height: 100%; */
+        /* background-size: cover; */
+        /* width: 100%; */
+}
+
+/* css load more*/
+.totop {
+    position: fixed;
+    bottom: 10px;
+    right: 20px;
+}
+.totop a {
+    display: none;
+}
+a, a:visited {
+    color: #33739E;
+    text-decoration: none;
+    display: block;
+    margin: 10px 0;
+    font-weight: bold;
+}
+
+img.card-img-top {
+    width: auto;
+    height: 225px;
+}
+a:hover {
+    text-decoration: none;
+}
+
+a.btn.btn-info.nutsp {
+    color: white;
+}
+a#loadMore {
+    padding: 10px;
+    text-align: center;
+    background-color: #33739E;
+    color: #fff;
+    border-width: 0 1px 1px 0;
+    border-style: solid;
+    border-color: #fff;
+    margin: auto;
+    margin-bottom: 20px;
+    box-shadow: 0 1px 1px #ccc;
+    transition: all 600ms ease-in-out;
+    -webkit-transition: all 600ms ease-in-out;
+    -moz-transition: all 600ms ease-in-out;
+    -o-transition: all 600ms ease-in-out;
+}
+a#loadMore:hover {
+    background-color: #fff;
+    color: #33739E;
+}
+
+/* css logo */
+
+.quanlyml {
+    font-size: 10px;
+    box-sizing: border-box;
+    color: #f7ef04;
+    font-style: oblique;
+    font-family: cursive;
+    font-weight: bold;
+}
+
+.quanlym {
+    position: absolute;
+    top: -28px;
+    right: -12px;
+    color: #f7b90a;
+}
+
+.quanly {
+    width: 366px;
+    margin: auto;
+    /* background: red; */
+    position: relative;
+}
+.quanlyml {
+    margin-bottom: 24px;
+}
+
+ .fname {
+    font-family: 'Caveat', cursive;
+    display: inline-block;
+    font-size: 24px;
+     opacity: 0; 
+  }
+
+
+
+
+input[type=submit] {
+  width: auto;
+  background-color: #4CAF50;
+  color: white;
+  padding: 5px 9px;
+  margin: 2px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+input[type=text] {
+  width: 99%;
+  padding: 5px 0px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+input[type=password]  {
+  width: 99%;
+  padding: 5px 0px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+.AcountDetail {
+    /* background: rebeccapurple; */
+    padding: 5px 5px;
+    width: 421px;
+}
+button.btn.btn-outline-success {
+    float: left;
+    margin-right: 10px;
+}
+ 
