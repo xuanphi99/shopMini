@@ -63,3 +63,13 @@
 <link  href="<c:url value="/resources/css/animate.min.css"/>" rel="stylesheet">
 <script type="text/javascript" src='<c:url value="/resources/css/wow.min.js"  />'></script>
 <script> new WOW().init(); </script>
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-XQV5KQBMFF"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-XQV5KQBMFF');
+</script>

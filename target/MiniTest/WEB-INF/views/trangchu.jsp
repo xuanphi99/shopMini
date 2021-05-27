@@ -6,7 +6,10 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>Insert title here</title>
+
+
+
+<title>Shop Mini</title>
 <jsp:include page="header.jsp"/>
 <%-- <link href="<c:url value="/resources/Bootstrap/bootstrap.min.css"/>"
 	rel="stylesheet">
@@ -30,8 +33,14 @@
 </script> --%>
 
 
+
+
 </head>
 <body>
+
+<div id="fb-root"></div>
+<script async defer crossorigin="anonymous" src="https://connect.facebook.net/vi_VN/sdk.js#xfbml=1&version=v10.0&appId=159490242814839&autoLogAppEvents=1" nonce="3AMC9C7K"></script>
+
 
 	<div class="trangchu">
 		<div class="trangchuPanMenu">
@@ -222,6 +231,11 @@
 							<h4 class="card-title tensp">${SanPhamThuI.getTenSanPham()}
 							</h4>
 							<p class="card-text giasp">${SanPhamThuI.getGiaTien()}VNĐ</p>
+							
+							<!-- //nut thich -->
+							<div class="fb-like" data-href="https://shopmini-demo.herokuapp.com/" data-width="100" data-layout="button_count" data-action="like" data-size="small" data-share="true"></div>
+							
+							
 							<a
 								href='  <c:url value="/chitietsanpham/${SanPhamThuI.getMaSanPham()}"/> '
 								class="btn btn-info nutsp">Xem chi tiết</a>
