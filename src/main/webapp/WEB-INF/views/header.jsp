@@ -9,6 +9,11 @@
 <link href="<c:url value="/resources/css/styleTrangchu.css"/>"
 	rel="stylesheet">
 
+<!-- viewerJS -->
+
+<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/viewerjs/1.9.0/viewer.css">
+
+
 <script type="text/javascript" src='<c:url value="/resources/Js/jquery-3.2.1.min.js"  />'></script>
 <!-- Magnific Popup core CSS file -->
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.0.0/magnific-popup.min.css">
@@ -57,8 +62,9 @@
 <script type="text/javascript" charset="utf8" src="<c:url value="/resources/Js/jquery.dataTables.js"/>"></script>
 <script type="text/javascript" src='<c:url value="/resources/Js/ConTen.js"  />'></script>
 
+<!-- viewerJS -->
 
-
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/viewerjs/1.9.0/viewer.min.js"></script>
 
 <link  href="<c:url value="/resources/css/animate.min.css"/>" rel="stylesheet">
 <script type="text/javascript" src='<c:url value="/resources/css/wow.min.js"  />'></script>

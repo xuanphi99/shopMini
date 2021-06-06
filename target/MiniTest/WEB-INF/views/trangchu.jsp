@@ -207,6 +207,7 @@
  -->
 
 	<!--  phan sp hot -->
+	<div id="images">
 	<div  class="container" id="title-sanpham ">
 		<span class="sphot">SẢN PHẨM HOT</span>
 		<div class="row">
@@ -217,16 +218,24 @@
 				<%
 					x = x + 0.05;
 				%>
+				
 				<div class=" col-6 col-sm-6 col-md-4 col-lg-3 itemsanPham "
+				
 					data-attr="${SizelistSanPham}" data-Countitem-Show="4">
+					
+					
 					<div class="card text-center wow animate__zoomIn "
 						data-wow-delay="<%=x%>s">
-						<a
+						<%-- <a
 							href=" <c:url value="/resources/Image/sanpham/${ SanPhamThuI.getHinhSanPham()}"/> "
 							class="work-image"> <img class="card-img-top"
 							src="<c:url value="/resources/Image/sanpham/${ SanPhamThuI.getHinhSanPham()}"/>"
 							alt="Card image cap">
-						</a>
+						</a> --%>
+						
+						<img class="card-img-top"
+							src="<c:url value="/resources/Image/sanpham/${ SanPhamThuI.getHinhSanPham()}"/>">
+							
 						<div class="card-body">
 							<h4 class="card-title tensp">${SanPhamThuI.getTenSanPham()}
 							</h4>
@@ -241,7 +250,8 @@
 								class="btn btn-info nutsp">Xem chi tiết</a>
 						</div>
 					</div>
-				</div>
+				
+			</div>
 			</c:forEach>
 
 			
@@ -249,7 +259,7 @@
 
 		</div>
 	</div>
-
+</div>
 
 <a href="#" id="loadMore">Load More</a>
 
