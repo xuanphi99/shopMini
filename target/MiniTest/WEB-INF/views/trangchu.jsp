@@ -11,6 +11,9 @@
 
 <title>Shop Mini</title>
 <jsp:include page="header.jsp"/>
+
+
+
 <%-- <link href="<c:url value="/resources/Bootstrap/bootstrap.min.css"/>"
 	rel="stylesheet">
 <link href="<c:url value="/resources/css/styleTrangchu.css"/>"
@@ -311,6 +314,7 @@
 
 
 
+<script type="text/javascript" src='<c:url value="/resources/Js/tmpJS.js"  />'></script>
 
 <%-- 	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
 		integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
