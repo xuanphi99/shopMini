@@ -22,9 +22,9 @@
         <property name="username" value="root" />
     <property name="password" value="xuanphi99ndt2"/>   -->  
     
-        <property name="url" value="jdbc:mysql://freedb.tech/freedbtech_dbmitestrandom" />
-        <property name="username" value="freedbtech_checkout" />
-    <property name="password" value="xuanphi@ptit"/>   
+        <property name="url" value="jdbc:mysql://sql4.freesqldatabase.com:3306/sql4433137" />
+        <property name="username" value="sql4433137" />
+    <property name="password" value="ZSAN2ILsJI"/>   
     
     
   </bean> 
