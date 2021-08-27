@@ -165,14 +165,15 @@ function GoBackWithRefresh() {
 			success : function(value) {
 			  if (value == true) {
 				
-			 	$('#kqdn').text('Dang nhap thanh cong');
+			 	$('#kqdn').text('Dang nhap thanh cong').css("color", "red");
 
 			 	
 			 	GoBackWithRefresh();
 			 	
 			  }
 			  else {
-			  	$('#kqdn').text('Dang nhap that bai');
+//			  	$('#kqdn').text('Dang nhap that bai');
+				  swal("Thông Báo!", "Sai thông tin đăng nhập :)) ");
 			  }
 			}
 
@@ -444,7 +445,7 @@ $('.DM').click(function(event) {
   
 		
 		$('.increase').click(function(event) {
-			alert("gg");
+//			alert("gg");
 		});
 		
 		
@@ -1070,7 +1071,7 @@ $('.DM').click(function(event) {
 // các hàm dùng lại
 		function LoadSpadmin(spbatdau) {
 			$.ajax({
-				url:"/api/PhanTrang",
+				XuLyDangKy:"/api/PhanTrang",
 			    type:"GET",
 			    data:{
 			    	spbatdau:spbatdau,
