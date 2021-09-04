@@ -12,7 +12,6 @@ public class ExceptionHand {
 	
 	@ExceptionHandler(value = {Exception.class , NoResultException.class})
 	public String error(Exception exception,ModelMap m) {
-		m.addAttribute("txtErr", exception);
 		System.out.println(exception);
 	//	System.out.println("Đã xảy ra lỗi"+exception);
 		return "error";

@@ -6,12 +6,34 @@
 <html>
 <head>
 <meta charset="UTF-8">
+
+<link href="<c:url value="/resources/css/styleError.css"/>"
+	rel="stylesheet">
+
 <title>Insert title here</title>
 </head>
 <body>
-<h3>Xảy ra lỗi thử lại sau 
+<div class="content">
+  <div class="browser-bar">
+    <span class="close button"></span>
+    <span class="min button"></span>
+    <span class="max button"></span>
+  </div>
+  <div class="text"></div>
+</div>
 
-</h3>
-<c:catch>${txtErr} </c:catch>
+<script type="text/javascript">
+
+
+
+</script>
+
+ <script type="text/javascript"  src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+ <script type="text/javascript" src='<c:url value="/resources/Js/jquery-3.2.1.min.js"  />'></script>
+
+<script type="text/javascript" src='<c:url value="/resources/Js/errorpage.js"  />'></script>
+
 </body>
+
+
 </html>

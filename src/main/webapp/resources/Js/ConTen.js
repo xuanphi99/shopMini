@@ -1,6 +1,6 @@
 	$(document).ready(function() {
 
-	
+		 swal("Server  free hơi chậm , mong mọi người thông cảm ! Thank You !! ");
 		
 		//tabe
 		$('#example').DataTable();
@@ -1071,7 +1071,7 @@ $('.DM').click(function(event) {
 // các hàm dùng lại
 		function LoadSpadmin(spbatdau) {
 			$.ajax({
-				XuLyDangKy:"/api/PhanTrang",
+				url:"/api/PhanTrang",
 			    type:"GET",
 			    data:{
 			    	spbatdau:spbatdau,
