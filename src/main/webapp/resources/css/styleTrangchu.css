@@ -4,6 +4,12 @@
 	padding: 0px;
 	
 }
+/* css danh muc */
+li.DM.activedm {
+    color: #e43636;
+    cursor: pointer;
+    background: aliceblue;
+}
 
 h4.card-title.tensp ,.giasp {
     height: 82px;

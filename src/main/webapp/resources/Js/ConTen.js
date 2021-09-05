@@ -400,6 +400,8 @@ function GoBackWithRefresh() {
 
 		$('.clickdm').hide();	//an khoi danh muc dl
 $('.DM').click(function(event) {
+	$('.DM').removeClass( "activedm" )
+	$(this).addClass( "activedm" )
 		var MaDanhMuc =$(this).attr("data-idDM");
 		var TenDanhMuc =$(this).text();	
 		$('.pageDetail8').hide();
