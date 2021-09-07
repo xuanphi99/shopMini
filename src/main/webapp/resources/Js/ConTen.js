@@ -1,7 +1,26 @@
 	$(document).ready(function() {
 
-		 swal("Server  free hơi chậm , mong mọi người thông cảm ! Thank You !! ");
-		
+		//fix server heroku no sleep
+		console.log("app is running ...")
+		var interval ;	
+			interval = setInterval ( function ()  { 
+				$.ajax({
+					  url: "https://shopmini-demo.herokuapp.com/",
+					
+					}).done(function() {
+						window.location = "https://shopmini-demo.herokuapp.com/";
+					});
+			   
+			},  10000 );
+			var checkTime = [23,24,0,1,2,3,4,5,6,7];	
+			
+			if (jQuery.inArray(new Date().getHours(), checkTime ) !== 1 ){
+				console.log("app sleep ...")
+				 clearInterval(interval);
+			}
+		// end check	
+			
+			
 		//tabe
 		$('#example').DataTable();
 		
@@ -78,7 +97,6 @@ function GoBackWithRefresh() {
 		var distanceLoadMore = 4;
 		var wit =window.innerWidth;
 		//&& $(window).width >= 768
-		console.log(wit);
 		if ( wit < 992 && wit >= 768) {
 			soLuongLoadMore = 3;
 			distanceLoadMore = 3;
@@ -113,7 +131,7 @@ function GoBackWithRefresh() {
 			        $('html,body').animate({
 			            scrollTop: $(this).offset().top
 			        }, 1500);
-			        console.log(countItem+ " "+$('.itemsanPham').length);
+//			        console.log(countItem+ " "+$('.itemsanPham').length);
 			        // check de hidden load more
 			        if($('.itemsanPham').length <= countItem ){
 						  $("#loadMore").hide();
@@ -242,7 +260,7 @@ function GoBackWithRefresh() {
 				},
 				success : function(kqDk) {
 					
-					console.log(kqDk);
+//					console.log(kqDk);
 				  if (kqDk ==true) {
 					  $('#ketqua0').text("");  
 					  $('#ketquadky1').text(""); 
@@ -406,7 +424,7 @@ $('.DM').click(function(event) {
 		var TenDanhMuc =$(this).text();	
 		$('.pageDetail8').hide();
 		$('.pageDetail2').hide();
-	console.log(MaDanhMuc+" "+ TenDanhMuc);
+//	console.log(MaDanhMuc+" "+ TenDanhMuc);
 			$.ajax({
 				url: '/api/loaddanhmuc',
 					type: 'GET',
@@ -482,7 +500,7 @@ $('.DM').click(function(event) {
 	var countPrev = $(this).attr("data-countPrev");
 	
 	var soLuongKho =$(this).attr("data-SoLuongKho");
-	console.log(sum+" "+soLuongKho); 
+//	console.log(sum+" "+soLuongKho); 
 	if (parseInt(sum)<=parseInt(soLuongKho)) {
 	
 		// nếu dat thanh cong thi luu vet
@@ -552,7 +570,7 @@ $('.DM').click(function(event) {
 			var masp= 	$(this).parent().siblings('.tensp').attr("data-masp");
 			var mamau=  $(this).parent().siblings('.mau').attr("data-MaMau");
 			var masize= $(this).parent().siblings('.size').attr("data-maSize");
-			console.log("ma size= "+ masize +" ma sp = "+masp+" ma mau  "+ mamau );
+//			console.log("ma size= "+ masize +" ma sp = "+masp+" ma mau  "+ mamau );
 			var sum =parseInt($('#giohang').text());
 			console.log("tong so luong  = "+ sum);
 			$(this).parent().parent().remove();
@@ -579,7 +597,7 @@ $('.DM').click(function(event) {
 						
 		  },
 			success : function(value) {
-				console.log(value);
+//				console.log(value);
 			}
 	
 		}); // het ajax
@@ -631,7 +649,7 @@ $('.DM').click(function(event) {
 	//	event.preventDefault();
 		
 		var login = $('.itemphai ').attr("data-login");
-		console.log(login);
+//		console.log(login);
 		//yc login trc khi dat hang
 		
 		if (login ==='') {
@@ -785,7 +803,7 @@ $('.DM').click(function(event) {
 		   $('.paging-item').eq(pagecurrent).addClass('active');
 		   var   spbatdau1 =$('.paging-item').eq(pagecurrent).text();
 		var spbatdau =( spbatdau1-1)*3
-			    	console.log( $('.paging-item').eq(pagecurrent).text());
+//			    	console.log( $('.paging-item').eq(pagecurrent).text());
 	//	console.log("san pham bdnext "+spbatdau);
 			    	 LoadSpadmin(spbatdau);
 			    	
@@ -836,7 +854,7 @@ $('.DM').click(function(event) {
 
 		}
 				else {
-					console.log("sai");
+//					console.log("sai");
 				}
 		});
 			
@@ -853,7 +871,7 @@ $('.DM').click(function(event) {
 		
 		files	= event.target.files  // laasy tat ca cac file thong so
 		tenhinh = files[0].name;
-		console.log(files);
+//		console.log(files);
 		forms = new FormData();  // them the form de gui dl trong html
 		forms.append("file",files[0]);  // tao 1 bien ten file gan gia tri trong mang file vua lay ddc
 		
@@ -1045,7 +1063,7 @@ $('.DM').click(function(event) {
 						chitietSp.find("#mausanpham").val(value.chitietsanpham[i].mauSanPham.mamau);
 						chitietSp.find("#sizesanpham").val(value.chitietsanpham[i].sizeSanPham.maSize);
 						chitietSp.find("#soluong").val(value.chitietsanpham[i].soluong);
-						console.log(value.chitietsanpham[i].sizeSanPham.size);
+//						console.log(value.chitietsanpham[i].sizeSanPham.size);
 						$("#addSp").append(chitietSp);	
 						
 					}
